@@ -1,6 +1,5 @@
 """
 The httplib2 algorithms ported for use with requests.
-This file is edited by Shunxing Bao 09/06/2019
 """
 import logging
 import re
@@ -275,8 +274,8 @@ class CacheController(object):
             return
 
         cc_req = self.parse_cache_control(request.headers)
-        #COMMENT by Shunxing for hacking http headers cc = self.parse_cache_control(response_headers)
-        cc = cc_req # add this line to make sure response header contains max-age - Shunxing 
+        cc = self.parse_cache_control(response_headers)
+
         cache_url = self.cache_url(request.url)
         logger.debug('Updating cache with response from "%s"', cache_url)
 
