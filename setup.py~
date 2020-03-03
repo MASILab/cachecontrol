@@ -1,8 +1,8 @@
 import setuptools
 
 long_description = open("README.rst").read()
-#Version change by Shunxing
-VERSION = "0.12.5.1"
+
+VERSION = "0.12.5"
 
 setup_params = dict(
     name="CacheControl",
