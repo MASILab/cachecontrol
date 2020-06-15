@@ -2,10 +2,10 @@ import setuptools
 
 long_description = open("README.rst").read()
 #Version change by Shunxing
-VERSION = "0.12.5.2"
+VERSION = "0.12.5.3"
 
 setup_params = dict(
-    name="CacheControl",
+    name="CacheControl_ldax",
     version=VERSION,
     author="Shunxing Bao",
     author_email="onealbao@gmail.com",
